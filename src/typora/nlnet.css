@@ -5,6 +5,8 @@
     --theme-color-light: #c5eedb;
     --theme-color-deep: #268158;
     --panel-color: #f0f0f0;
+    --code-block-color: #f2f2f2;
+    --border-color: #e7eaed;
 }
 
 @include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
@@ -226,13 +228,13 @@ ol:last-child {
     margin-bottom: 0;
 }
 
+/* 引用块 */
 blockquote {
     border-left: 4px solid var(--theme-color);
     border-radius: 4px;
     background-color: var(--panel-color);
     padding: 0 15px;
     /* color: #777777; */
-
 	margin: 15px 0;
 	color: inherit;
 	padding: 1px 15px;
@@ -296,8 +298,8 @@ table tr td:last-child {
 .md-fences,
 code,
 tt {
-    border: 0px solid #e7eaed;
-    background-color: #f2f2f2;
+    border: 0px solid var(--border-color);
+    background-color: var(--code-block-color);
     border-radius: 3px;
     padding: 0;
     padding: 2px 4px 0px 4px;
@@ -307,11 +309,14 @@ tt {
 
 /* 单行代码 */
 code {
-    background-color: #dddddd;
-    border: 0px;
+    border: 1px solid var(--border-color);
+    background-color: var(--side-bar-bg-color);
+    border-radius: 3px;
     font-weight: lighter;
-    padding: 5 5px 5 5px;
     margin: 5px;
+    padding: 2px 6px;
+    font-family:'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋;
+    /* box-shadow: 0 1px 1px 0 rgba(0,28,36,.3); */
 }
 
 .md-fences {
@@ -544,7 +549,7 @@ img[alt~=radius12] {
 /* 图片缩放和阴影结束======================================= */
 
 
-/* 链接、下划线、高亮、Code======================================= */
+/* 链接、下划线、高亮======================================= */
 u {
     text-decoration: none;
     color:var(--control-text-color);
@@ -596,13 +601,7 @@ mark {
     box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, .3);
     transition: .3s ease;
 }
-code {
-    font-family:'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋;
-    background-color: rgb(241, 241, 241);
-    padding: 2px 6px;
-    border-radius: 3px;
-}
-/* 链接、下划线、高亮结束、Code======================================= */
+/* 链接、下划线、高亮结束======================================= */
 
 
 /* 代码样式 */
