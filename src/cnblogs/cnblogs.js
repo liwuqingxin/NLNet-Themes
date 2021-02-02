@@ -31,6 +31,14 @@ window.$silence = {
             title: 'css选择器',
             target: '_blank',
             url: 'http://www.mamicode.com/info-detail-2629190.html',
+        }, {
+            title: 'shields',
+            target: '_blank',
+            url: 'https://shields.io/',
+        }, {
+            title: 'badgen',
+            target: '_blank',
+            url: 'https://badgen.net/',
         }]
     }],
 
