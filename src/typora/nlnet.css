@@ -568,14 +568,19 @@ a:visited {
 a:hover {
     color: var(--theme-color-deep);
     background-color: var(--theme-color-light);
+    transition-duration: .3s;
     /* padding: 3px 0px; */
 }
 a:active {
     color: var(--theme-color);
 }
 [md-inline=link] {
-    border-bottom: 2px solid var(--theme-color);padding-bottom: 2px;
+    border-bottom: 1px solid var(--theme-color);padding-bottom: 2px;
     text-decoration: none;
+}
+[md-inline=link]:hover {
+    border-bottom: 2px solid var(--theme-color);padding-bottom: 2px;
+    transition-duration: .1s ease;
 }
 mark {
     background-color: transparent;
@@ -585,6 +590,11 @@ mark {
     background-color: gold;
     padding: 2px 6px;
     border-radius: 3px;
+    transition: .3s ease;
+}
+[md-inline=highlight]:hover {
+    box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, .3);
+    transition: .3s ease;
 }
 code {
     font-family:'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋;
