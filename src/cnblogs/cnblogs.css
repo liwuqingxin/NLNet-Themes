@@ -833,6 +833,11 @@ a:hover {
 	font-weight: 700
 }
 
+/* 顶栏 */
+#navigator a {
+	font-family: 'Segoe UI', '微软雅黑', Tahoma, Geneva, Verdana, sans-serif, 微软雅黑;
+}
+
 #topics .postTitle {
 	font-size: 21px;
 	font-weight: 300
