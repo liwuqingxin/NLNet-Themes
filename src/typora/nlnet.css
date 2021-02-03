@@ -549,27 +549,27 @@ img[alt~=radius12] {
 
 /* 预设图片块======================================= */
 img[alt~=ok] {
-    content:url("https://www.hualigs.cn/image/601a0b6c28a83.jpg");
+    content:url("https://www.hualigs.cn/image/601a1f32a64c0.jpg");
     width: 24px;
     vertical-align: middle;
 }
 img[alt~=error] {
-    content:url("https://www.hualigs.cn/image/601a0b6d59283.jpg");
+    content:url("https://www.hualigs.cn/image/601a1f49c8815.jpg");
     width: 24px;
     vertical-align: middle;
 }
 img[alt~=warn] {
-    content:url("https://www.hualigs.cn/image/601a0b6e5afd5.jpg");
+    content:url("https://www.hualigs.cn/image/601a1f49c9593.jpg");
     width: 24px;
     vertical-align: middle;
 }
 img[alt~=list] {
-    content:url("https://www.hualigs.cn/image/601a0b6fd1692.jpg");
+    content:url("https://www.hualigs.cn/image/601a1f49c9e7d.jpg");
     width: 24px;
     vertical-align: middle;
 }
 img[alt~=info] {
-    content:url("https://www.hualigs.cn/image/601a0b6ac306b.jpg");
+    content:url("https://www.hualigs.cn/image/601a1f49c87e8.jpg");
     width: 24px;
     vertical-align: middle;
     /* display: inline-block; */

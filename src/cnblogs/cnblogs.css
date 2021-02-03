@@ -215,10 +215,12 @@ body,html {
 	height: 100%
 }
 
+/* 博客园字体 */
 body {
 	background: var(--blog-bg-color);
 	color: var(--text-color);
-	font-family: Lato,PingFang SC,Microsoft YaHei,sans-serif;
+	/* font-family: Lato,PingFang SC,Microsoft YaHei,sans-serif,仿宋; */
+	font-family: 'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋;
 	font-size: 14px;
 	font-weight: 300
 }
@@ -1947,7 +1949,7 @@ a:hover {
 
 /* 预设图片块======================================= */
 #topics .postBody img[alt~=ok] {
-    content:url("https://www.hualigs.cn/image/601a0b6c28a83.jpg");
+    content:url("https://www.hualigs.cn/image/601a1f32a64c0.jpg");
 	width: 16px;
 	margin: 0px 5px;
 	vertical-align: middle;
@@ -1955,7 +1957,7 @@ a:hover {
 	zoom: 0.1;
 }
 #topics .postBody img[alt~=error] {
-    content:url("https://www.hualigs.cn/image/601a0b6d59283.jpg");
+    content:url("https://www.hualigs.cn/image/601a1f49c8815.jpg");
 	width: 16px;
 	margin: 0px 5px;
 	vertical-align: middle;
@@ -1963,7 +1965,7 @@ a:hover {
 	zoom: 0.1;
 }
 #topics .postBody img[alt~=warn] {
-    content:url("https://www.hualigs.cn/image/601a0b6e5afd5.jpg");
+	content:url("https://www.hualigs.cn/image/601a1f49c9593.jpg");
 	width: 16px;
 	margin: 0px 5px;
 	vertical-align: middle;
@@ -1971,7 +1973,7 @@ a:hover {
 	zoom: 0.1;
 }
 #topics .postBody img[alt~=list] {
-    content:url("https://www.hualigs.cn/image/601a0b6fd1692.jpg");
+	content:url("https://www.hualigs.cn/image/601a1f49c9e7d.jpg");
 	width: 16px;
 	margin: 0px 5px;
 	vertical-align: middle;
@@ -1979,7 +1981,7 @@ a:hover {
 	zoom: 0.1;
 }
 #topics .postBody img[alt~=info] {
-    content:url("https://www.hualigs.cn/image/601a0b6ac306b.jpg");
+	content:url("https://www.hualigs.cn/image/601a1f49c87e8.jpg");
 	width: 16px;
 	margin: 0px 5px;
 	vertical-align: middle;
