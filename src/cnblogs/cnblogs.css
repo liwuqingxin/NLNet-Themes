@@ -748,13 +748,14 @@ a:hover {
 	padding-bottom: 10px
 }
 
+/* 博客列表项标题 postTitle */
 .day .postTitle,.entrylist .entrylistPosttitle {
-	font-size: 19px
+	font-size: 19px;
 }
 
 .day .postTitle>a,.entrylist .entrylistPosttitle>a {
-	position: relative;
 	/* color: var(--theme-color); */
+	position: relative;
 	font-weight: 600;
 }
 
@@ -1909,7 +1910,7 @@ a:hover {
 	animation-delay: 1.2s
 }
 
-/*代码折叠按钮*/
+/* 代码折叠按钮======================================= */
 .code-expander {
      width:90px;
      text-align:center;
@@ -1944,6 +1945,7 @@ a:hover {
 .code-expander::selection {
     background: green;
 }
+/* 代码折叠按钮结束======================================= */
 
 
 
@@ -2065,3 +2067,27 @@ img[alt~=radius12] {
     border-radius: 12px;
 }
 /* 图片缩放和阴影结束======================================= */
+
+/* 滚动条样式======================================= */
+/*滚动条整体样式*/
+::-webkit-scrollbar {
+	width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+	height: 5px;
+}
+/*滚动条里面小方块*/
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: rgb(182, 181, 181);
+	/* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #535353;
+	translate: 0.3s;
+}
+/*滚动条里面轨道*/
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background: #EDEDED;
+	/* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+}
+/* 滚动条样式结束======================================= */
