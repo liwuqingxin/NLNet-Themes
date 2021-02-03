@@ -2144,3 +2144,55 @@ img[alt~=radius12] {
 	/* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
 }
 /* 滚动条样式结束======================================= */
+
+/* 链接、下划线、高亮======================================= */
+u {
+	text-decoration: none;
+	border-bottom: 1px solid var(--theme-color);padding-bottom: 2px;
+	color:var(--control-text-color);
+	transition: 0.3s;
+}
+a {
+    text-decoration: none;
+    color:var(--control-text-color);
+    padding: 2px 0px;
+    border-radius: 3px 3px 0px 0px;
+}
+a:link {
+    color: var(--theme-color);
+}
+a:visited {
+    color: var(--theme-color);
+}
+a:hover {
+    color: var(--theme-color-deep);
+    /* background-color: var(--theme-color-light); */
+    transition-duration: .3s;
+    /* padding: 3px 0px; */
+}
+a:active {
+    color: var(--theme-color);
+}
+[md-inline=link] {
+    border-bottom: 1px solid var(--theme-color);padding-bottom: 2px;
+    text-decoration: none;
+}
+[md-inline=link]:hover {
+    border-bottom: 2px solid var(--theme-color);padding-bottom: 2px;
+    transition-duration: .1s ease;
+}
+mark {
+    background-color: transparent;
+}
+strong {
+    font-family:'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋;
+    background-color: gold;
+    padding: 2px 6px;
+    border-radius: 3px;
+    transition: .3s ease;
+}
+strong:hover {
+    box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, .3);
+    transition: .3s ease;
+}
+/* 链接、下划线、高亮结束======================================= */
