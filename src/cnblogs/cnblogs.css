@@ -155,7 +155,7 @@
 	--catalog-bg-color: #fff;
 	--panel-bg-color: #f8f8f8;
 	--code-bg-color: #f1f1f1;
-	--code-emphasize-color: rgb(255, 159, 50);
+	--code-emphasize-color: rgb(255, 132, 50);
 }
 
 :root[mode=dark] {
@@ -165,7 +165,7 @@
 	--catalog-bg-color: #252525;
 	--panel-bg-color: #252525;
 	--code-bg-color: #3a3a3a;
-	--code-emphasize-color: rgb(255, 159, 50);
+	--code-emphasize-color: rgb(255, 132, 50);
 }
 
 :root[theme=a] {
@@ -983,16 +983,34 @@ a:hover {
 	min-width: 100px
 }
 
-#topics .postBody h1 code,#topics .postBody h2 code,#topics .postBody h3 code,#topics .postBody h4 code,#topics .postBody h5 code,#topics .postBody h6 code,#topics .postBody li>code,#topics .postBody p>code,#topics .postBody table code {
-	line-height: 1.2;
-	font-family: consolas!important;
+/* h、代码code */
+#topics .postBody h1 code,
+#topics .postBody h2 code,
+#topics .postBody h3 code,
+#topics .postBody h4 code,
+#topics .postBody h5 code,
+#topics .postBody h6 code,
+#topics .postBody li>code,
+#topics .postBody p>code,
+#topics .postBody table code {
+	line-height: 1.75;
+	font-family: 'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋!important;
 	vertical-align: middle;
 	margin: 0 3px;
-	background-color: var(--code-bg-color)!important;
+	/* background-color: var(--code-bg-color)!important; */
+	background-color: transparent!important;
+	color: var(--code-emphasize-color);
 	font-size: 14px!important;
 	padding: .2em .3em!important;
 	border-radius: 3px!important;
-	border: none!important
+	border: none!important;
+	transition: 0.3s ease-out;
+}
+#topics .postBody li>code:hover,
+#topics .postBody p>code:hover,
+#topics .postBody table code:hover {
+	background-color: var(--code-bg-color)!important;
+	transition: 0.3s ease-out;
 }
 
 #topics .postBody #BlogPostCategory,#topics .postBody #EntryTag {
@@ -1513,7 +1531,7 @@ a:hover {
 	transform: translate3d(252px,0,0)
 }
 
-/* 代码块背景颜色 */
+/* 代码块 */
 .cnblogs-markdown .hljs,.cnblogs-markdown .hljsln {
 	display: block;
 	overflow-x: auto;
@@ -1533,7 +1551,7 @@ a:hover {
 	padding: .7em 1em!important
 }
 
-/* 代码块背景颜色 - 行号背景颜色 */
+/* 代码块 - 行号 */
 .ln-bg {
 	z-index: 1;
 	top: 0;
