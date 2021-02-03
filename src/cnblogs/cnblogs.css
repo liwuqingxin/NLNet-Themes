@@ -751,6 +751,10 @@ a:hover {
 /* 博客列表项标题 postTitle */
 .day .postTitle,.entrylist .entrylistPosttitle {
 	font-size: 19px;
+	border-left: 8px solid var(--theme-color);
+	border-bottom: 1px solid var(--theme-color);
+	padding: 1px 10px 3px 10px;
+	font-family: 'Segoe UI', '微软雅黑', Tahoma, Geneva, Verdana, sans-serif, 微软雅黑;
 }
 
 .day .postTitle>a,.entrylist .entrylistPosttitle>a {
@@ -851,7 +855,12 @@ a:hover {
 /* H1的Margin */
 #topics .postBody h1 {
 	font-size: 21px;
-    margin: 25px 0px 10px 0px;
+	margin: 25px 0px 10px 0px;
+	border-left: 8px solid var(--theme-color);
+	border-bottom: 1px solid var(--theme-color);
+	padding: 1px 10px 3px 10px;
+	font-family: 'Segoe UI', '微软雅黑', Tahoma, Geneva, Verdana, sans-serif, 微软雅黑;
+	/* border-radius: 3px; */
 }
 
 #topics .postBody h2 {
