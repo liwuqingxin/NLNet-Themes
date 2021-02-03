@@ -39,6 +39,10 @@ window.$silence = {
             title: 'badgen',
             target: '_blank',
             url: 'https://badgen.net/',
+        }, {
+            title: '图片尺寸修改',
+            target: '_blank',
+            url: 'https://www.gaitubao.com/',
         }]
     }],
 
@@ -70,6 +74,7 @@ window.$silence = {
 
 // 代码折叠
 $(document).ready(function () {
+    return;
     var pres = $("pre");
     for (var i = 0; i < pres.length; i++) {
         // --- 处于Pre内部

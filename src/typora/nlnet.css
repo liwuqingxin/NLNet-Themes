@@ -545,9 +545,36 @@ img[alt~=radius9] {
 img[alt~=radius12] {
     border-radius: 12px;
 }
-
 /* 图片缩放和阴影结束======================================= */
 
+/* 预设图片块======================================= */
+img[alt~=ok] {
+    content:url("https://www.hualigs.cn/image/601a0b6c28a83.jpg");
+    width: 24px;
+    vertical-align: middle;
+}
+img[alt~=error] {
+    content:url("https://www.hualigs.cn/image/601a0b6d59283.jpg");
+    width: 24px;
+    vertical-align: middle;
+}
+img[alt~=warn] {
+    content:url("https://www.hualigs.cn/image/601a0b6e5afd5.jpg");
+    width: 24px;
+    vertical-align: middle;
+}
+img[alt~=list] {
+    content:url("https://www.hualigs.cn/image/601a0b6fd1692.jpg");
+    width: 24px;
+    vertical-align: middle;
+}
+img[alt~=info] {
+    content:url("https://www.hualigs.cn/image/601a0b6ac306b.jpg");
+    width: 24px;
+    vertical-align: middle;
+    /* display: inline-block; */
+}
+/* 预设图片块结束======================================= */
 
 /* 链接、下划线、高亮======================================= */
 u {

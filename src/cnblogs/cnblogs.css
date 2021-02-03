@@ -899,20 +899,19 @@ a:hover {
 /* 图片样式 */
 #topics .postBody img {
 	/* display: block; */
+	/* border-radius: 0px; */
+	/* box-shadow: 3px 4px 5px rgba(27,31,35,.15),0 0 1px rgba(106,115,125,.35) */
 	margin: 15px 0 10px;
-	border-radius: 0px;
     border:0px 1px 1px 0px solid var(--theme-color);
-	box-shadow: 3px 4px 5px rgba(27,31,35,.15),0 0 1px rgba(106,115,125,.35)
 }
 
 /* 图标样式 */
-#topics .icon img{
-	/* display: block; */
+/* #topics .icon img{
 	margin: 0px;
 	border-radius: 0px;
     border:0px 0px 0px 0px solid var(--theme-color);
 	box-shadow: 0px 0px 0px rgba(27,31,35,.15),0 0 0px rgba(106,115,125,.35)
-}
+} */
 
 #topics .postBody .cnblogs-markdown pre {
 	white-space: pre;
@@ -1940,3 +1939,124 @@ a:hover {
 .code-expander::selection {
     background: green;
 }
+
+
+
+/* 预设图片块======================================= */
+#topics .postBody img[alt~=ok] {
+    content:url("https://www.hualigs.cn/image/601a0b6c28a83.jpg");
+	width: 16px;
+	margin: 0px 5px;
+	vertical-align: middle;
+	border: 0px;
+	zoom: 0.1;
+}
+#topics .postBody img[alt~=error] {
+    content:url("https://www.hualigs.cn/image/601a0b6d59283.jpg");
+	width: 16px;
+	margin: 0px 5px;
+	vertical-align: middle;
+	border: 0px;
+	zoom: 0.1;
+}
+#topics .postBody img[alt~=warn] {
+    content:url("https://www.hualigs.cn/image/601a0b6e5afd5.jpg");
+	width: 16px;
+	margin: 0px 5px;
+	vertical-align: middle;
+	border: 0px;
+	zoom: 0.1;
+}
+#topics .postBody img[alt~=list] {
+    content:url("https://www.hualigs.cn/image/601a0b6fd1692.jpg");
+	width: 16px;
+	margin: 0px 5px;
+	vertical-align: middle;
+	border: 0px;
+	zoom: 0.1;
+}
+#topics .postBody img[alt~=info] {
+    content:url("https://www.hualigs.cn/image/601a0b6ac306b.jpg");
+	width: 16px;
+	margin: 0px 5px;
+	vertical-align: middle;
+	border: 0px;
+	zoom: 0.1;
+}
+/* 预设图片块结束======================================= */
+
+/* 图片缩放和阴影======================================= */
+img[alt~=zoom] {
+    zoom: 75%;
+}
+img[alt~=zoom25] {
+    zoom: 25%;
+}
+img[alt~=zoom50] {
+    zoom: 50%;
+}
+img[alt~=zoom66] {
+    zoom: 66%;
+}
+img[alt~=zoom75] {
+    zoom: 75%;
+}
+img[alt~=zoom125] {
+    zoom: 125%;
+}
+img[alt~=zoom150] {
+    zoom: 150%;
+}
+img[alt~=zoom200] {
+    zoom: 200%;
+}
+
+img[alt~=shadow] {
+    box-shadow: 0px 20px 40px 1px rgba(0, 0, 0, .3);
+    border: 0px;
+    /* border: 1px solid #e4e4e4; */
+}
+img[alt~=shadow-light] {
+    box-shadow: 0px 10px 16px 1px rgba(0, 0, 0, .3);
+    border: 0px;
+    /* border-radius: 8px; */
+}
+
+img[alt~=border] {
+    border: 1px solid #e4e4e4;
+}
+img[alt~=border0] {
+    border: 0px;
+}
+img[alt~=border1] {
+    border: 1px solid #e4e4e4;
+}
+img[alt~=border2] {
+    border: 2px solid #e4e4e4;
+}
+img[alt~=border3] {
+    border: 3px solid #e4e4e4;
+}
+img[alt~=border4] {
+    border: 3px solid #e4e4e4;
+}
+img[alt~=border5] {
+    border: 3px solid #e4e4e4;
+}
+
+img[alt~=radius] {
+    border-radius: 3px;
+}
+img[alt~=radius3] {
+    border-radius: 3px;
+}
+img[alt~=radius6] {
+    border-radius: 6px;
+}
+img[alt~=radius9] {
+    border-radius: 9px;
+}
+img[alt~=radius12] {
+    border-radius: 12px;
+}
+/* 图片缩放和阴影结束======================================= */
