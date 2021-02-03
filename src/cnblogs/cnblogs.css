@@ -751,7 +751,9 @@ a:hover {
 }
 
 .day .postTitle>a,.entrylist .entrylistPosttitle>a {
-	position: relative
+	position: relative;
+	/* color: var(--theme-color); */
+	font-weight: 600;
 }
 
 .day .postTitle>a:after,.entrylist .entrylistPosttitle>a:after {
@@ -763,7 +765,7 @@ a:hover {
 	left: 0;
 	bottom: -2px;
 	background: var(--theme-color);
-	transition: all .3s ease-in-out
+	transition: all .3s ease-in-out;
 }
 
 .day .postTitle>a:hover:after,.entrylist .entrylistPosttitle>a:hover:after {
@@ -799,7 +801,8 @@ a:hover {
 }
 
 .day .postDesc,.entrylist .entrylistItemPostDesc {
-	text-align: right
+	text-align: right;
+	color: gray;
 }
 
 .day .postDesc>a,.entrylist .entrylistItemPostDesc>a {
