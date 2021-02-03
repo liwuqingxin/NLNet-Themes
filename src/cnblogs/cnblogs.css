@@ -154,7 +154,8 @@
 	--border-color: #eef2f8;
 	--catalog-bg-color: #fff;
 	--panel-bg-color: #f8f8f8;
-	--code-bg-color: #f1f1f1
+	--code-bg-color: #f1f1f1;
+	--code-emphasize-color: rgb(255, 159, 50);
 }
 
 :root[mode=dark] {
@@ -163,47 +164,58 @@
 	--border-color: #2f2f2f;
 	--catalog-bg-color: #252525;
 	--panel-bg-color: #252525;
-	--code-bg-color: #3a3a3a
+	--code-bg-color: #3a3a3a;
+	--code-emphasize-color: rgb(255, 159, 50);
 }
 
 :root[theme=a] {
-	--theme-color: #2d8cf0
+	--theme-color: #2d8cf0;
+	--theme-color-light: #66a4e7;
 }
 
 :root[theme=b] {
-	--theme-color: #fa7298
+	--theme-color: #fa7298;
+	--theme-color-light: #ffa2bc;
 }
 
 :root[theme=c] {
-	--theme-color: #42b983
+	--theme-color: #42b983;
+	--theme-color-light: #80e2b6;
 }
 
 :root[theme=d] {
-	--theme-color: #607d8b
+	--theme-color: #607d8b;
+	--theme-color-light: #90abb8;
 }
 
 :root[theme=e] {
-	--theme-color: #5e72e4
+	--theme-color: #5e72e4;
+	--theme-color-light: #929fe7;
 }
 
 :root[theme=f] {
-	--theme-color: #ff9700
+	--theme-color: #ff9700;
+	--theme-color-light: #fcb54c;
 }
 
 :root[theme=g] {
-	--theme-color: #ff5722
+	--theme-color: #ff5722;
+	--theme-color-light: #f89071;
 }
 
 :root[theme=h] {
-	--theme-color: #009688
+	--theme-color: #009688;
+	--theme-color-light: #39bdaf;
 }
 
 :root[theme=i] {
-	--theme-color: #673bb7
+	--theme-color: #673bb7;
+	--theme-color-light: #8f6ccf;
 }
 
 :root[theme=j] {
-	--theme-color: #906f61
+	--theme-color: #906f61;
+	--theme-color-light: #b39b90;
 }
 
 * {
@@ -892,6 +904,7 @@ a:hover {
 	border-bottom: 1px solid var(--border-color)
 }
 
+/* 引用块 */
 #topics .postBody blockquote {
 	border: none;
 	margin: 15px 0;
@@ -899,7 +912,15 @@ a:hover {
 	border-radius: 4px;
 	padding: 1px 15px;
 	border-left: 4px solid var(--theme-color);
-	background-color: var(--panel-bg-color)
+	background-color: var(--panel-bg-color);
+	transition: 0.3s ease-out;
+}
+#topics .postBody blockquote:hover {
+	/* background-color: var(--theme-color-light); */
+	/* box-shadow: 0px 12px 10px rgba(27,31,35,.15),0 0 1px rgba(106,115,125,.35); */
+	box-shadow: 0px 20px 40px 1px rgba(0, 0, 0, .3);
+	background: white;
+	transition: 0.3s ease-in;
 }
 
 #topics .postBody em {
