@@ -996,11 +996,11 @@ a:hover {
 	line-height: 1.75;
 	font-family: 'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋!important;
 	vertical-align: middle;
-	margin: 0 3px;
+	margin: -4px 3px 0px 3px;  /* 调试得到的对齐其他文本的值 */
 	/* background-color: var(--code-bg-color)!important; */
 	background-color: transparent!important;
 	color: var(--code-emphasize-color);
-	font-size: 14px!important;
+	font-size: 16px!important;
 	padding: .2em .3em!important;
 	border-radius: 3px!important;
 	border: none!important;
