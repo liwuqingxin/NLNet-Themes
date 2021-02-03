@@ -2159,10 +2159,11 @@ a {
     border-radius: 3px 3px 0px 0px;
 }
 a:link {
-    color: var(--theme-color);
+    /* color: var(--theme-color); */
 }
 a:visited {
-    color: var(--theme-color);
+	/* color: var(--theme-color); */
+	color: gray;
 }
 a:hover {
     color: var(--theme-color-deep);
