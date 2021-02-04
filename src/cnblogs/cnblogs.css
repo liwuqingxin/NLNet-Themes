@@ -157,6 +157,7 @@
 	--code-bg-color: #f1f1f1;
 	--code-ln-bg-color: #eeeeee;
 	--code-emphasize-color: rgb(255, 132, 50);
+	--shadow-color: rgb(0, 0, 0, .3);
 }
 
 :root[mode=dark] {
@@ -168,6 +169,7 @@
 	--code-bg-color: #3a3a3a;
 	--code-ln-bg-color: #333333;
 	--code-emphasize-color: rgb(255, 132, 50);
+	--shadow-color: rgb(255, 255, 255, .3);
 }
 
 :root[theme=a] {
@@ -237,7 +239,7 @@ body {
 	/* font-family: 'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋; */
 	font-family: 'Segoe UI',Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace!important;
 	font-size: 14px;
-	font-weight: 300
+	font-weight: normal;	/* 300太细，阅读伤眼 */
 }
 
 table {
@@ -935,10 +937,10 @@ a:hover {
 	padding-right: 3px
 }
 
-#topics .postBody strong {
+/* #topics .postBody strong {
 	margin: 0 3px;
 	font-weight: 500
-}
+} */
 
 /* 图片样式 */
 #topics .postBody img {
@@ -1005,7 +1007,7 @@ a:hover {
 	/* font-family: 'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋!important; */
 	font-family: 'Segoe UI',Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace!important;
 	vertical-align: middle;
-	margin: -4px 3px 0px 3px;  /* 调试得到的对齐其他文本的值 */
+	margin: -5px 3px 0px 3px;  /* 调试得到的对齐其他文本的值 */
 	/* background-color: var(--code-bg-color)!important; */
 	background-color: transparent!important;
 	color: var(--code-emphasize-color);
@@ -2188,19 +2190,30 @@ a:active {
     border-bottom: 2px solid var(--theme-color);padding-bottom: 2px;
     transition-duration: .1s ease;
 }
-mark {
-    background-color: transparent;
-}
-strong {
+strong,
+ mark {
 	/* font-family:'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋; */
 	font-family: 'Segoe UI',Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace!important;
-    background-color: gold;
     padding: 2px 6px;
     border-radius: 3px;
+	transition: .3s ease;
+	color: black;
+	font-weight: normal;
+}
+mark {
+	background-color: rgba(255, 217, 0, 0.7);
+}
+mark:hover {
+	/* box-shadow: 0px 6px 8px 1px var(--shadow-color); */
+	background-color: rgba(255, 217, 0);
     transition: .3s ease;
 }
+strong {
+	background-color: rgba(160, 217, 255, 0.7);
+}
 strong:hover {
-    box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, .3);
+	/* box-shadow: 0px 6px 8px 1px var(--shadow-color); */
+	background-color: rgba(160, 217, 255);
     transition: .3s ease;
 }
 /* 链接、下划线、高亮结束======================================= */
