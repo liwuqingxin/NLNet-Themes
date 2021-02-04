@@ -1550,7 +1550,8 @@ a:hover {
 	border: 0px solid #EEEEEE!important;
 	color: #bababa;
 	font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace!important;
-	font-size: 15px!important
+	font-size: 15px !important;
+	margin: 0px 0px 0px 3px;	/* 这里是避免滚动条露出了Radius范围 */
 }
 
 .cnblogs-markdown .hljs::-webkit-scrollbar,.cnblogs-markdown .hljsln::-webkit-scrollbar {
