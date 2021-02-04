@@ -52,8 +52,8 @@ window.$silence = {
     catalog: {
         enable: true,
         index: true,
-        active: false,
-        levels: ['h2', 'h3', 'h4']
+        active: true,
+        levels: ['h1', 'h2', 'h3', 'h4']
     },
 
     signature: {

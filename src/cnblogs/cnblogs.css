@@ -163,6 +163,7 @@
 	--scroll-bar-thumb-hover-color: #777777;
 	--blockquote-color: #f8f8f8;
 	--blockquote-hover-color: #ffffff;
+	--comment-body-bg-color: #eeeeee;
 }
 
 :root[mode=dark] {
@@ -180,6 +181,7 @@
 	--scroll-bar-thumb-hover-color: #777777;
 	--blockquote-color: #252525;
 	--blockquote-hover-color: #404040;
+	--comment-body-bg-color: #3a3a3a;
 }
 
 :root[theme=a] {
@@ -925,6 +927,7 @@ a:hover {
 }
 
 /* 引用块 */
+#blog-comments-placeholder blockquote,
 #topics .postBody blockquote {
 	border: none;
 	margin: 15px 0;
@@ -935,6 +938,7 @@ a:hover {
 	background-color: var(--blockquote-color);
 	transition: 0.2s ease-out;
 }
+#blog-comments-placeholder blockquote:hover,
 #topics .postBody blockquote:hover {
 	background-color: var(--blockquote-hover-color);
 	box-shadow: 0px 20px 40px 1px rgba(0, 0, 0, .5);
@@ -1001,7 +1005,16 @@ a:hover {
 	min-width: 100px
 }
 
-/* h、代码code */
+/* 代码code */
+#blog-comments-placeholder h1 code,
+#blog-comments-placeholder h2 code,
+#blog-comments-placeholder h3 code,
+#blog-comments-placeholder h4 code,
+#blog-comments-placeholder h5 code,
+#blog-comments-placeholder h6 code,
+#blog-comments-placeholder li>code,
+#blog-comments-placeholder p>code,
+#blog-comments-placeholder table code,
 #topics .postBody h1 code,
 #topics .postBody h2 code,
 #topics .postBody h3 code,
@@ -1025,6 +1038,9 @@ a:hover {
 	border: none!important;
 	transition: 0.3s ease-out;
 }
+#blog-comments-placeholder li>code:hover,
+#blog-comments-placeholder p>code:hover,
+#blog-comments-placeholder table code:hover,
 #topics .postBody li>code:hover,
 #topics .postBody p>code:hover,
 #topics .postBody table code:hover {
@@ -1181,13 +1197,15 @@ a:hover {
 	margin-top: 12px
 }
 
+/* 评论区 */
 .blog_comment_body {
 	width: auto;
 	border-radius: 4px;
 	padding: 12px;
 	margin-left: 50px;
-	background-color: var(--panel-bg-color);
-	min-height: 19px
+	background-color: var(--comment-body-bg-color);
+	min-height: 19px;
+	line-height: 32px;
 }
 
 .blog_comment_body img {
