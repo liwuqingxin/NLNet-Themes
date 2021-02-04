@@ -781,7 +781,7 @@ a:hover {
 }
 
 .day,.day>.postSeparator,.entrylistItem {
-	border-bottom: 1px solid var(--border-color);
+	/* border-bottom: 1px solid var(--border-color); */
 	text-align: justify;
 	margin-bottom: 10px;
 	padding-bottom: 10px
