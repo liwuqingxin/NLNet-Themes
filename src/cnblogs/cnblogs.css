@@ -161,6 +161,8 @@
 	--scroll-bar-bg-color: #f1f1f1;
 	--scroll-bar-thumb-color: #cccccc;
 	--scroll-bar-thumb-hover-color: #777777;
+	--blockquote-color: #f8f8f8;
+	--blockquote-hover-color: #ffffff;
 }
 
 :root[mode=dark] {
@@ -176,6 +178,8 @@
 	--scroll-bar-bg-color: #252525;
 	--scroll-bar-thumb-color: #333333;
 	--scroll-bar-thumb-hover-color: #777777;
+	--blockquote-color: #252525;
+	--blockquote-hover-color: #404040;
 }
 
 :root[theme=a] {
@@ -928,15 +932,13 @@ a:hover {
 	border-radius: 4px;
 	padding: 1px 15px;
 	border-left: 4px solid var(--theme-color);
-	background-color: var(--panel-bg-color);
-	transition: 0.3s ease-out;
+	background-color: var(--blockquote-color);
+	transition: 0.2s ease-out;
 }
 #topics .postBody blockquote:hover {
-	/* background-color: var(--theme-color-light); */
-	/* box-shadow: 0px 12px 10px rgba(27,31,35,.15),0 0 1px rgba(106,115,125,.35); */
-	box-shadow: 0px 20px 40px 1px rgba(0, 0, 0, .3);
-	background: white;
-	transition: 0.3s ease-in;
+	background-color: var(--blockquote-hover-color);
+	box-shadow: 0px 20px 40px 1px rgba(0, 0, 0, .5);
+	transition: 0.2s ease-in;
 }
 
 #topics .postBody em {
