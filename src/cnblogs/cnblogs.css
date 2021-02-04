@@ -155,16 +155,18 @@
 	--catalog-bg-color: #fff;
 	--panel-bg-color: #f8f8f8;
 	--code-bg-color: #f1f1f1;
+	--code-ln-bg-color: #eeeeee;
 	--code-emphasize-color: rgb(255, 132, 50);
 }
 
 :root[mode=dark] {
 	--blog-bg-color: #202020;
-	--text-color: #d8d8d8;
+	--text-color: #c8c8c8;
 	--border-color: #2f2f2f;
 	--catalog-bg-color: #252525;
 	--panel-bg-color: #252525;
 	--code-bg-color: #3a3a3a;
+	--code-ln-bg-color: #333333;
 	--code-emphasize-color: rgb(255, 132, 50);
 }
 
@@ -232,7 +234,8 @@ body {
 	background: var(--blog-bg-color);
 	color: var(--text-color);
 	/* font-family: Lato,PingFang SC,Microsoft YaHei,sans-serif,仿宋; */
-	font-family: 'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋;
+	/* font-family: 'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋; */
+	font-family: 'Segoe UI',Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace!important;
 	font-size: 14px;
 	font-weight: 300
 }
@@ -999,7 +1002,8 @@ a:hover {
 #topics .postBody p>code,
 #topics .postBody table code {
 	line-height: 1.75;
-	font-family: 'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋!important;
+	/* font-family: 'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋!important; */
+	font-family: 'Segoe UI',Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace!important;
 	vertical-align: middle;
 	margin: -4px 3px 0px 3px;  /* 调试得到的对齐其他文本的值 */
 	/* background-color: var(--code-bg-color)!important; */
@@ -1474,6 +1478,7 @@ a:hover {
 	width: 100%
 }
 
+/* 目录结构 */
 .esa-contents {
 	position: fixed;
 	top: 0;
@@ -1541,7 +1546,7 @@ a:hover {
 	display: block;
 	overflow-x: auto;
 	padding: .7em 1em .7em 3em!important;
-	background: #F3F3F3!important;
+	background: var(--code-bg-color)!important;
 	border: 0px solid #EEEEEE!important;
 	color: #bababa;
 	font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace!important;
@@ -1561,7 +1566,7 @@ a:hover {
 	z-index: 1;
 	top: 0;
 	height: 100%;
-	background: #EEEEEE;
+	background: var(--code-ln-bg-color);
 	border-radius: 4px 0 0 4px
 }
 
@@ -2186,7 +2191,8 @@ mark {
     background-color: transparent;
 }
 strong {
-    font-family:'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋;
+	/* font-family:'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋; */
+	font-family: 'Segoe UI',Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace!important;
     background-color: gold;
     padding: 2px 6px;
     border-radius: 3px;

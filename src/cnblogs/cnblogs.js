@@ -4,7 +4,7 @@ window.$silence = {
     avatar: 'https://s3.ax1x.com/2020/12/21/rBFtd1.png',
     favicon: 'https://s3.ax1x.com/2020/12/21/rBFtd1.png',
     github: 'https://github.com/liwuqingxin',
-    defaultMode: 'light',
+    defaultMode: 'auto',
     defaultTheme: 'c',
 
     navbars: [{
