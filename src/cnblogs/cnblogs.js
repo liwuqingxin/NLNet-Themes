@@ -52,7 +52,7 @@ window.$silence = {
     catalog: {
         enable: true,
         index: true,
-        active: true,
+        active: false,
         levels: ['h1', 'h2', 'h3', 'h4']
     },
 

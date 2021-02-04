@@ -1,5 +1,96 @@
 @import url(https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css);
 
+
+:root[mode=light] {
+	--blog-body-bg-color: #f4f4f4;
+	--blog-bg-color: #fff;
+	--text-color: #596172;
+	--border-color: #eef2f8;
+	--catalog-bg-color: #fff;
+	--panel-bg-color: #f8f8f8;
+	--code-bg-color: #f1f1f1;
+	--code-ln-bg-color: #eeeeee;
+	--code-emphasize-color: rgb(255, 132, 50);
+	--shadow-color: rgb(0, 0, 0, .3);
+	--scroll-bar-bg-color: #f1f1f1;
+	--scroll-bar-thumb-color: #cccccc;
+	--scroll-bar-thumb-hover-color: #777777;
+	--blockquote-color: #f8f8f8;
+	--blockquote-hover-color: #ffffff;
+	--comment-body-bg-color: #eeeeee;
+	--block-bg-color: white;
+}
+
+:root[mode=dark] {
+	--blog-body-bg-color: #202020;
+	--blog-bg-color: #202020;
+	--text-color: #c8c8c8;
+	--border-color: #2f2f2f;
+	--catalog-bg-color: #252525;
+	--panel-bg-color: #252525;
+	--code-bg-color: #3a3a3a;
+	--code-ln-bg-color: #333333;
+	--code-emphasize-color: rgb(255, 132, 50);
+	--shadow-color: rgb(255, 255, 255, .3);
+	--scroll-bar-bg-color: #252525;
+	--scroll-bar-thumb-color: #333333;
+	--scroll-bar-thumb-hover-color: #777777;
+	--blockquote-color: #252525;
+	--blockquote-hover-color: #404040;
+	--comment-body-bg-color: #3a3a3a;
+	--block-bg-color: #555555;
+}
+
+:root[theme=a] {
+	--theme-color: #2d8cf0;
+	--theme-color-light: #66a4e7;
+}
+
+:root[theme=b] {
+	--theme-color: #fa7298;
+	--theme-color-light: #ffa2bc;
+}
+
+:root[theme=c] {
+	--theme-color: #42b983;
+	--theme-color-light: #80e2b6;
+}
+
+:root[theme=d] {
+	--theme-color: #607d8b;
+	--theme-color-light: #90abb8;
+}
+
+:root[theme=e] {
+	--theme-color: #5e72e4;
+	--theme-color-light: #929fe7;
+}
+
+:root[theme=f] {
+	--theme-color: #ff9700;
+	--theme-color-light: #fcb54c;
+}
+
+:root[theme=g] {
+	--theme-color: #ff5722;
+	--theme-color-light: #f89071;
+}
+
+:root[theme=h] {
+	--theme-color: #009688;
+	--theme-color-light: #39bdaf;
+}
+
+:root[theme=i] {
+	--theme-color: #673bb7;
+	--theme-color-light: #8f6ccf;
+}
+
+:root[theme=j] {
+	--theme-color: #906f61;
+	--theme-color-light: #b39b90;
+}
+
 @media only screen and (max-width:1365px) {
 	.github-corner {
 		display: none
@@ -148,92 +239,6 @@
 	}
 }
 
-:root[mode=light] {
-	--blog-bg-color: #fff;
-	--text-color: #596172;
-	--border-color: #eef2f8;
-	--catalog-bg-color: #fff;
-	--panel-bg-color: #f8f8f8;
-	--code-bg-color: #f1f1f1;
-	--code-ln-bg-color: #eeeeee;
-	--code-emphasize-color: rgb(255, 132, 50);
-	--shadow-color: rgb(0, 0, 0, .3);
-	--scroll-bar-bg-color: #f1f1f1;
-	--scroll-bar-thumb-color: #cccccc;
-	--scroll-bar-thumb-hover-color: #777777;
-	--blockquote-color: #f8f8f8;
-	--blockquote-hover-color: #ffffff;
-	--comment-body-bg-color: #eeeeee;
-}
-
-:root[mode=dark] {
-	--blog-bg-color: #202020;
-	--text-color: #c8c8c8;
-	--border-color: #2f2f2f;
-	--catalog-bg-color: #252525;
-	--panel-bg-color: #252525;
-	--code-bg-color: #3a3a3a;
-	--code-ln-bg-color: #333333;
-	--code-emphasize-color: rgb(255, 132, 50);
-	--shadow-color: rgb(255, 255, 255, .3);
-	--scroll-bar-bg-color: #252525;
-	--scroll-bar-thumb-color: #333333;
-	--scroll-bar-thumb-hover-color: #777777;
-	--blockquote-color: #252525;
-	--blockquote-hover-color: #404040;
-	--comment-body-bg-color: #3a3a3a;
-}
-
-:root[theme=a] {
-	--theme-color: #2d8cf0;
-	--theme-color-light: #66a4e7;
-}
-
-:root[theme=b] {
-	--theme-color: #fa7298;
-	--theme-color-light: #ffa2bc;
-}
-
-:root[theme=c] {
-	--theme-color: #42b983;
-	--theme-color-light: #80e2b6;
-}
-
-:root[theme=d] {
-	--theme-color: #607d8b;
-	--theme-color-light: #90abb8;
-}
-
-:root[theme=e] {
-	--theme-color: #5e72e4;
-	--theme-color-light: #929fe7;
-}
-
-:root[theme=f] {
-	--theme-color: #ff9700;
-	--theme-color-light: #fcb54c;
-}
-
-:root[theme=g] {
-	--theme-color: #ff5722;
-	--theme-color-light: #f89071;
-}
-
-:root[theme=h] {
-	--theme-color: #009688;
-	--theme-color-light: #39bdaf;
-}
-
-:root[theme=i] {
-	--theme-color: #673bb7;
-	--theme-color-light: #8f6ccf;
-}
-
-:root[theme=j] {
-	--theme-color: #906f61;
-	--theme-color-light: #b39b90;
-}
-
 * {
 	margin: 0;
 	padding: 0
@@ -243,9 +248,9 @@ body,html {
 	height: 100%
 }
 
-/* 博客园字体 */
+/* 博客园字体 主体 */
 body {
-	background: var(--blog-bg-color);
+	background: var(--blog-body-bg-color);
 	color: var(--text-color);
 	/* font-family: Lato,PingFang SC,Microsoft YaHei,sans-serif,仿宋; */
 	/* font-family: 'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋; */
@@ -322,7 +327,7 @@ a:hover {
 	left: 0;
 	margin: 0 auto;
 	border-top: 0;
-	border-bottom: 1px solid var(--border-color);
+	/* border-bottom: 1px solid var(--border-color); */
 	padding-bottom: 0;
 	display: block;
 	height: 60px;
@@ -332,9 +337,14 @@ a:hover {
 #blogTitle h1 {
 	font-size: 25px;
 	font-weight: 600;
-	font-family: Georgia;
+	font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 	float: left;
-	margin-top: 15px
+	/* margin-top: 10px; */
+	margin: 0px 20px 10px 30px;
+	
+	background: linear-gradient(to right, var(--theme-color), var(--code-emphasize-color));
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 #blogTitle h2 {
@@ -367,7 +377,7 @@ a:hover {
 	float: left;
 	font-size: 17px;
 	border-right: 0;
-	font-weight: 300;
+	font-weight: 800;
 	text-align: center;
 	width: auto;
 	padding: 19px 16px
@@ -457,12 +467,12 @@ a:hover {
 
 #mainContent .forFlow {
 	margin: 0 auto 0 0;
-	max-width: 960px
+	max-width: 1000px
 }
 
 #sideBar {
-	width: 230px;
-	border-right: 1px solid var(--border-color);
+	width: 245px;
+	border-right: 0px solid var(--border-color);
 	font-weight: 300;
 	display: none;
 	min-height: 750px;
@@ -716,13 +726,13 @@ a:hover {
 }
 
 #myposts .PostList {
-	border-bottom: 1px solid var(--border-color);
+	/* border-bottom: 1px solid var(--border-color); */
 	padding: 0;
 	margin: 0
 }
 
 #myposts .PostList:first-of-type {
-	border-top: 1px solid var(--border-color)
+	/* border-top: 1px solid var(--border-color) */
 }
 
 #myposts .postTitl2 {
@@ -850,10 +860,82 @@ a:hover {
 	font-weight: 700
 }
 
+
+/* 文章区块（block）背景================================== */
+/* #mainContent .forFlow, */
+/* .day, */
+#sidebar_news,
+#blog-calendar,
+.sidebar-block,
+#sidebar_shortcut,
+#sidebar_recentposts,
+#sidebar_toptags,
+#sidebar_scorerank,
+#sidebar_postcategory,
+#sidebar_postarchive,
+#sidebar_recentcomments,
+#sidebar_topviewedposts,
+#sidebar_topcommentedposts,
+#sidebar_topdiggedposts,
+.forFlow[style],
+/* #taglist_main, */
+/* #myposts, */
+#header,
+#comment_form_container,
+#topics {
+	background: var(--block-bg-color);
+	box-shadow: 1px 1px 1px 0px rgb(5, 5, 5, 0.1);
+}
+#header {
+	border-radius: 0px 0px 16px 16px;
+	padding: 10px 40px;
+}
+.esa-profile-avatar {
+	border-radius: 16px;
+	width: auto;
+	margin: 0px 0px 15px 0px;
+	box-shadow: 1px 1px 1px 0px rgb(5, 5, 5, 0.1);
+}
+/* #mainContent .forFlow, */
+/* .day, */
+/* #myposts, */
+/* #taglist_main, */
+#comment_form_container,
+.forFlow[style],
+#topics
+{
+	border-radius: 16px;
+	padding: 40px;
+	margin: 0px 0px 15px 0px;
+}
+#sidebar_news,
+#blog-calendar,
+.sidebar-block,
+#sidebar_shortcut,
+#sidebar_recentposts,
+#sidebar_toptags,
+#sidebar_scorerank,
+#sidebar_postcategory,
+#sidebar_postarchive,
+#sidebar_recentcomments,
+#sidebar_topviewedposts,
+#sidebar_topcommentedposts,
+#sidebar_topdiggedposts {
+	border-radius: 16px;
+	padding: 10px;
+	margin: 0px 0px 15px 0px;
+}
+
 /* 顶栏 */
+#navigator {
+	position: inherit;
+	font-size: large;
+	font-weight: 700;
+}
 #navigator a {
 	font-family: 'Segoe UI', '微软雅黑', Tahoma, Geneva, Verdana, sans-serif, 微软雅黑;
 }
+/* 文章区块（block）背景结束================================== */
 
 #topics .postTitle {
 	font-size: 21px;
@@ -1499,11 +1581,6 @@ a:hover {
 	cursor: pointer;
 	color: var(--text-color);
 	border-radius: 4px
-}
-
-.esa-profile-avatar {
-	border-radius: 4px;
-	width: 100%
 }
 
 /* 目录结构 */
