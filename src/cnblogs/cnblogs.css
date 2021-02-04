@@ -792,7 +792,7 @@ a:hover {
 	font-size: 19px;
 	border-left: 8px solid var(--theme-color);
 	border-bottom: 1px solid var(--theme-color);
-	padding: 1px 10px 3px 10px;
+	padding: 0px 10px 5px 10px;
 	font-family: 'Segoe UI', '微软雅黑', Tahoma, Geneva, Verdana, sans-serif, 微软雅黑;
 }
 
@@ -830,20 +830,30 @@ a:hover {
 	margin-left: 10px
 }
 
+/* 查看全文按钮 */
 .day .postCon a,.entrylist .entrylistPostSummary a {
-	border-bottom: 1px dotted var(--text-color);
+	/* border-bottom: 1px dotted var(--text-color); */
+	border-radius: 0px;
+	border-bottom: 1px solid var(--theme-color);
+	color: var(--text-color);
 	padding: 2px 5px;
 	font-size: 14px;
-	margin-top: 10px;
-	display: table
+	margin: 10px;
+	display: table;
+	transition: 0.2px;
 }
 
 .day .postCon a:after,.entrylist .entrylistPostSummary a:after {
-	content: " \00bb"
+	/* content: " \00bb" */
+	content: " >";
 }
 
 .day .postCon a:hover,.entrylist .entrylistPostSummary a:hover {
-	border-bottom: 1px dotted var(--theme-color)
+	/* border-bottom: 1px dotted var(--theme-color) */
+	border-radius: 3px;
+	background: var(--theme-color);
+	transition: 0.2px;
+	color: var(--blockquote-color);
 }
 
 .day .postDesc,.entrylist .entrylistItemPostDesc {
@@ -1385,7 +1395,8 @@ a:hover {
 	margin-right: 0!important
 }
 
-#nav_next_page a,.pager a {
+/* 导航栏按钮 */
+/* #nav_next_page a,.pager a {
 	color: var(--text-color);
 	padding: 4px 7px;
 	border: 1px solid var(--border-color);
@@ -1395,6 +1406,42 @@ a:hover {
 #nav_next_page a:hover,.pager a:hover {
 	color: var(--theme-color);
 	border: 1px solid var(--theme-color)
+} */
+.pager,
+#nav_next_page a,
+.pager a {
+	/* border-bottom: 1px dotted var(--text-color); */
+	border-radius: 0px;
+	border-bottom: 1px solid var(--theme-color);
+	border:none;
+	padding: 2px 8px;
+	font-size: 14px;
+	margin: 5px;
+	/* display: table; */
+	transition: 0.2px;
+}
+.pager {
+	color: var(--comment-body-bg-color);
+}
+.pager a:last-child {
+	/* padding: 2px 16px 2px 8px; */
+	margin: 5px 13px 5px 5px;
+}
+/* #nav_next_page a::after{
+	content: " >";
+}
+.pager a:first-child:before {
+	content: "< ";
+}
+.pager a:last-child:after {
+	content: " >";
+} */
+#nav_next_page a:hover,.pager a:hover {
+	/* border-bottom: 1px dotted var(--theme-color) */
+	border-radius: 3px;
+	background: var(--theme-color);
+	transition: 0.2px;
+	color: var(--blockquote-color);
 }
 
 .pager span.current {
