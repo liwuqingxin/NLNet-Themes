@@ -158,6 +158,9 @@
 	--code-ln-bg-color: #eeeeee;
 	--code-emphasize-color: rgb(255, 132, 50);
 	--shadow-color: rgb(0, 0, 0, .3);
+	--scroll-bar-bg-color: #f1f1f1;
+	--scroll-bar-thumb-color: #cccccc;
+	--scroll-bar-thumb-hover-color: #777777;
 }
 
 :root[mode=dark] {
@@ -170,6 +173,9 @@
 	--code-ln-bg-color: #333333;
 	--code-emphasize-color: rgb(255, 132, 50);
 	--shadow-color: rgb(255, 255, 255, .3);
+	--scroll-bar-bg-color: #252525;
+	--scroll-bar-thumb-color: #333333;
+	--scroll-bar-thumb-hover-color: #777777;
 }
 
 :root[theme=a] {
@@ -2138,17 +2144,21 @@ img[alt~=radius12] {
 /*滚动条里面小方块*/
 ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
-	background: rgb(182, 181, 181);
+	/* background: rgb(182, 181, 181); */
+	background: var(--scroll-bar-thumb-color);
 	/* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: #535353;
+	/* background: #535353; */
+	background: var(--scroll-bar-thumb-hover-color);
 	translate: 0.3s;
 }
 /*滚动条里面轨道*/
 ::-webkit-scrollbar-track {
 	border-radius: 10px;
-	background: #EDEDED;
+	/* background: #EDEDED; */
+	background: var(--scroll-bar-bg-color);
+	translate: 0.3s;
 	/* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
 }
 /* 滚动条样式结束======================================= */
