@@ -2110,11 +2110,11 @@ a:hover {
 }
 
 .dark-loading {
-	background: #222
+	background: #777
 }
 
 .light-loading {
-	background: #fff
+	background: #777
 }
 
 .dark-loading,.light-loading {
