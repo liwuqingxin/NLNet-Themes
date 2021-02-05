@@ -925,6 +925,11 @@ a:hover {
 	width: auto;
 	margin: 0px 0px 15px 0px;
 	box-shadow: 1px 1px 1px 0px rgb(5, 5, 5, 0.1);
+	transition: .6s;
+}
+.esa-profile-avatar:hover {
+	transition: .6s;
+	transform: scale(0.6,0.6) rotate(360deg);
 }
 /* #mainContent .forFlow, */
 /* .day, */
