@@ -14,4 +14,7 @@ Themes for cnblogs and typora.
 1. Typora的主题是基于Typora自带的Github主题修改而来，另外参考博客园Theme Silence v3.0.0。
 2. cnblogs的主题则是基于Theme Silence v3.0.0修改一些样式而来。
 
-![cnblogs](https://ae01.alicdn.com/kf/Uae724f4bf8b742a6975a4a1023466dd6r.jpg)
+![](https://ae01.alicdn.com/kf/U67811e0eaaff4851bd6d74914d3c119a8.jpg)
+![](https://ae01.alicdn.com/kf/U31fa85b371084331be050a938a8fadb1d.jpg)
+![](https://ae01.alicdn.com/kf/U21c110a7965d4371bf1bd554b5c0ebb54.jpg)
+![](https://ae01.alicdn.com/kf/U12137aadeb0d4b2fa21094a9706e0b4eW.jpg)
