@@ -27,7 +27,7 @@
 	--blog-bg-color: #202020;
 	--text-color: #c8c8c8;
 	--disabled-text-color: #8b8b8b;
-	--border-color: #2f2f2f;
+	--border-color: #777777;
 	--catalog-bg-color: #252525;
 	--panel-bg-color: #252525;
 	--code-bg-color: #3a3a3a;
@@ -563,7 +563,7 @@ a:hover {
 }
 
 #blog-calendar {
-	border-top: 1px solid var(--border-color)
+	/* border-top: 1px solid var(--border-color) */
 }
 
 #blog-calendar .CalDayHeader {
@@ -581,11 +581,12 @@ a:hover {
 
 .catListTitle {
 	text-align: left;
-	margin: 20px 0;
+	margin: 0 0 20px 0;
 	font-size: 20px;
 	font-weight: 300;
 	border-left: 4px solid var(--theme-color);
-	border-radius: 4px;
+	border-bottom: 1px solid var(--theme-color);
+	/* border-radius: 4px; */
 	padding-left: 7px
 }
 
@@ -593,15 +594,21 @@ a:hover {
 	color: #314659;
 	border: 1px solid var(--border-color);
 	background-color: transparent;
-	width: 150px;
+	width: 135px;
 	height: 32px;
 	padding: 0 7px;
 	font-size: 16px;
-	border-radius: 4px
+	border-radius: 4px;
+	transition: 0.2s;
 }
-
+#sidebar_search #widget_my_zzk .input_my_zzk:hover {
+	border-color: var(--theme-color-light);
+	transition: 0.2s;
+}
 #sidebar_search #widget_my_zzk .input_my_zzk:focus {
-	outline: none
+	outline: none;
+	border-color: var(--theme-color);
+	transition: 0.2s;
 }
 
 #sidebar_search #widget_my_zzk .btn_my_zzk {
@@ -615,12 +622,14 @@ a:hover {
 	outline: 0;
 	border: 1px solid var(--border-color);
 	border-radius: 4px;
-	transition: border .3s
+	transition: .3s
 }
 
 #sidebar_search #widget_my_zzk .btn_my_zzk:hover {
-	color: var(--theme-color);
-	border: 1px solid var(--theme-color)
+	/* color: var(--theme-color); */
+	border: 1px solid var(--theme-color);
+	background: scroll var(--theme-color);
+	transition: 0.2s;
 }
 
 #sidebar_search #widget_my_google {
@@ -640,11 +649,13 @@ a:hover {
 	margin: 0 6px 6px 0;
 	display: inline-grid;
 	transition: all .3s ease;
-	border-radius: 4px
+	border-radius: 4px;
+	transition: 0.2s;
 }
 
 #sidebar_toptags li a {
-	transition: inherit
+	transition: inherit;
+	padding: 0px;
 }
 
 #sidebar_toptags li a .tag-count {
@@ -656,7 +667,9 @@ a:hover {
 }
 
 #sidebar_toptags li:hover {
-	border-color: var(--theme-color)
+	border-color: var(--theme-color);
+	background: scroll var(--theme-color);
+	transition: 0.2s;
 }
 
 #sidebar_categories li,#sidebar_scorerank li,#sidebar_shortcut li {
@@ -669,6 +682,11 @@ a:hover {
 	text-overflow: ellipsis;
 	list-style: none
 }
+#sidebar_categories li a:hover {
+	color: var(--theme-color);
+	transition: 0.2s;
+}
+
 
 #sidebar_recentposts li,#sidebar_topcommentedposts li,#sidebar_topdiggedposts li,#sidebar_topviewedposts li {
 	font-size: 15px;
@@ -934,7 +952,7 @@ a:hover {
 #sidebar_topcommentedposts,
 #sidebar_topdiggedposts {
 	border-radius: 16px;
-	padding: 10px;
+	padding: 15px;
 	margin: 0px 0px 15px 0px;
 }
 
@@ -1322,10 +1340,10 @@ a:hover {
 	padding-right: 0
 }
 
+
 #taglist_main table tr td .small {
 	display: none
 }
-
 #taglist_main table tr td a {
 	display: block;
 	padding: 5px;
@@ -1335,11 +1353,37 @@ a:hover {
 	border: 1px solid var(--border-color);
 	border-radius: 4px;
 	color: var(--text-color)
+	transparent: 0.2s;
+}
+#taglist_main table tr td a:hover {
+	border: 1px solid var(--theme-color);
+	background: scroll var(--theme-color);
+	transition: 0.2s;
 }
 
-#taglist_main table tr td a:hover {
-	border: 1px solid var(--theme-color)
+/* #taglist_main table tr td .small {
+	display: inline-block;
+	padding: 5.5px;
+	font-size: 14px!important;
+	background: var(--scroll-bar-thumb-color);
+	border-radius: 0px 6px 6px 0px;
+	margin: 0px -4px;
 }
+#taglist_main table tr td a {
+	display: inline-block;
+	padding: 5px;
+	font-weight: 300;
+	line-height: 20px;
+	text-align: right;
+	width: 80px;
+	background: var(--scroll-bar-bg-color);
+	border-radius: 6px 0px 0px 6px;
+	color: var(--text-color)
+}
+#taglist_main table tr td a:hover {
+	background: scroll var(--theme-color);
+	transition: 0.2s;
+} */
 
 #div_digg {
 	margin: 0;
@@ -2367,11 +2411,29 @@ mark:hover {
     transition: .3s ease;
 }
 strong {
-	background-color: rgba(160, 217, 255, 0.7);
+	background-color: rgba(255, 198, 160, 0.7);
 }
 strong:hover {
 	/* box-shadow: 0px 6px 8px 1px var(--shadow-color); */
-	background-color: rgba(160, 217, 255);
+	background-color:rgba(255, 198, 160);
     transition: .3s ease;
 }
 /* 链接、下划线、高亮结束======================================= */
+
+body > div.ui-popup.ui-popup-modal.ui-popup-show.ui-popup-focus > div {
+	border: none;
+	background: var(--code-bg-color);
+	color: var(--text-color);
+	box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, .2);
+}
+body > div.ui-popup.ui-popup-modal.ui-popup-show.ui-popup-focus button {
+	border: none;
+	background: var(--blog-bg-color);
+	color: var(--text-color);
+	transition: 0.3s;
+}
+body > div.ui-popup.ui-popup-modal.ui-popup-show.ui-popup-focus button:hover {
+	background: var(--theme-color);
+	color: var(--text-color);
+	transition: 0.3s;
+}
