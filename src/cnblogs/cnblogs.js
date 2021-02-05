@@ -200,4 +200,11 @@ $(document).ready(function () {
     $(a).attr('class', 'github');
     $(a).attr('target', '_black');
     navList.appendChild(a);
+
+    var footer = document.getElementById("footer");
+    var span = document.createElement('span');
+    span.innerHTML = '&amp; custom theme of <a href="https://github.com/liwuqingxin/Themes" target="_blank">NLNet\' cnblogs theme </a>'
+    $(span).attr('class', 'esa-copyright');
+    $(span).attr('id', 'nlnet_copyright');
+    footer.appendChild(span);
 });

@@ -2186,6 +2186,14 @@ a:hover {
 	animation-delay: 1.2s
 }
 
+#nlnet_copyright a {
+	font-weight: bold;
+}
+#nlnet_copyright a:hover {
+	color: var(--theme-color);
+	transition: 0.2s;
+}
+
 /* 代码折叠按钮======================================= */
 .code-expander {
      width:90px;
