@@ -458,11 +458,12 @@ a:hover {
 	width: 100%;
 	padding: 10px 0;
 	height: inherit;
+	font-weight: 300;
 	border-bottom: 1px solid transparent
 }
 
 #navList .esa-sub-navs ul li a:hover {
-	color: var(--theme-color)
+	color: var(--theme-color);
 }
 
 #main {
