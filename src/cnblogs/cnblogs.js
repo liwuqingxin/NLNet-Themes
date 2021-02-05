@@ -1,6 +1,6 @@
 window.$silence = {
-    avatar: 'https://s3.ax1x.com/2020/12/21/rBFtd1.png',
-    favicon: 'https://s3.ax1x.com/2020/12/21/rBFtd1.png',
+    avatar: 'https://nlnet-iss.oss-cn-hangzhou.aliyuncs.com/img/20210205212146.avator.png',
+    favicon: 'https://nlnet-iss.oss-cn-hangzhou.aliyuncs.com/img/20210205212146.avator.png',
     // github: 'https://github.com/liwuqingxin',
     defaultMode: 'auto',
     defaultTheme: 'c',
@@ -8,9 +8,6 @@ window.$silence = {
     navbars: [{
         title: '标签',
         url: 'https://www.cnblogs.com/liwuqingxin/tag/'
-    }, {
-        title: 'CSDN',
-        url: 'https://blog.csdn.net/Liwuqingxin?t=1'
     }, {
         title: '常用链接',
         chilren: [{
@@ -65,8 +62,8 @@ window.$silence = {
         enable: true,
         text: '',
         paypal: '',
-        wechat: 'https://www.hualigs.cn/image/600be4e38f380.jpg',
-        alipay: 'https://www.hualigs.cn/image/600be4e5a6bdb.jpg'
+        wechat: 'https://nlnet-iss.oss-cn-hangzhou.aliyuncs.com/img/20210205214540.wechart.jpg',
+        alipay: 'https://nlnet-iss.oss-cn-hangzhou.aliyuncs.com/img/20210205214609.alipay.jpg'
     }
 };
 
