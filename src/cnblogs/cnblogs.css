@@ -342,11 +342,23 @@ a:hover {
 	font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 	float: left;
 	/* margin-top: 10px; */
-	margin: 0px 20px 10px 30px;
+	margin: 0px 20px 0px 30px;
 	
 	background: linear-gradient(to right, var(--theme-color), var(--code-emphasize-color));
 	-webkit-background-clip: text;
 	color: transparent;
+}
+#navList_github {
+	float: right;
+	margin: 0px 0px 0px 30px;
+}
+.octicon-mark-github {
+	transition: 0.3s;
+	margin: 11px 0px;
+}
+.octicon-mark-github:hover {
+	transition: 0.3s;
+	fill: var(--theme-color);
 }
 
 #blogTitle h2 {
