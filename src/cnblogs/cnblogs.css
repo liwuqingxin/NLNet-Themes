@@ -5,6 +5,7 @@
 	--blog-body-bg-color: #f4f4f4;
 	--blog-bg-color: #fff;
 	--text-color: #596172;
+	--disabled-text-color: #8b8b8b;
 	--border-color: #eef2f8;
 	--catalog-bg-color: #fff;
 	--panel-bg-color: #f8f8f8;
@@ -25,6 +26,7 @@
 	--blog-body-bg-color: #202020;
 	--blog-bg-color: #202020;
 	--text-color: #c8c8c8;
+	--disabled-text-color: #8b8b8b;
 	--border-color: #2f2f2f;
 	--catalog-bg-color: #252525;
 	--panel-bg-color: #252525;
@@ -1389,8 +1391,9 @@ a:hover {
 	margin-right: 0
 }
 
-#nav_next_page,.pager {
-	color: var(--text-color);
+#nav_next_page,
+.topicListFooter .pager {
+	color: var(--disabled-text-color);
 	text-align: right;
 	margin-right: 0!important
 }
@@ -1414,11 +1417,12 @@ a:hover {
 	border-radius: 0px;
 	border-bottom: 1px solid var(--theme-color);
 	border:none;
+	color: var(--text-color);
 	padding: 2px 8px;
 	font-size: 14px;
 	margin: 5px;
 	/* display: table; */
-	transition: 0.2px;
+	transition: 0.2s;
 }
 .pager {
 	color: var(--comment-body-bg-color);
@@ -2325,7 +2329,7 @@ a:link {
 }
 a:visited {
 	/* color: var(--theme-color); */
-	color: gray;
+	/* color: gray; */
 }
 a:hover {
     color: var(--theme-color-deep);
