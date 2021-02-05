@@ -22,19 +22,19 @@ window.$silence = {
             target: '_blank',
             url: 'https://pan.baidu.com/disk/home?#/all?vmode=list&path=%2F!%20%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB',
         }, {
-            title: '博客园常用图标',
+            title: 'svg转base64',
             target: '_blank',
-            url: 'https://www.cnblogs.com/liwuqingxin/p/14358307.html',
+            url: 'https://www.css-js.com/tools/base64.html',
         }, {
             title: 'css选择器',
             target: '_blank',
             url: 'http://www.mamicode.com/info-detail-2629190.html',
         }, {
-            title: 'shields',
+            title: 'github徽章 - shields',
             target: '_blank',
             url: 'https://shields.io/',
         }, {
-            title: 'badgen',
+            title: 'github徽章 - badgen',
             target: '_blank',
             url: 'https://badgen.net/',
         }, {
