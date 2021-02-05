@@ -27,11 +27,11 @@ window.$silence = {
             target: '_blank',
             url: 'http://www.mamicode.com/info-detail-2629190.html',
         }, {
-            title: 'github徽章 - shields',
+            title: 'shields',
             target: '_blank',
             url: 'https://shields.io/',
         }, {
-            title: 'github徽章 - badgen',
+            title: 'badgen',
             target: '_blank',
             url: 'https://badgen.net/',
         }, {
