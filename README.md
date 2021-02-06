@@ -23,7 +23,7 @@ Themes for cnblogs and typora.
    > 3. 将src/cnblogs/cnblogs.js复制到博客园的`管理`-`设置`-`博客侧边栏公告框`中。
    > 4. 保存并刷新查看效果。
 
-3. 更多效果：[传送门](https://www.cnblogs.com/liwuqingxin/p/14365612.html)
+3. 更多效果：[传送门](https://www.cnblogs.com/liwuqingxin/p/14381825.html)
 
 ![](https://ae01.alicdn.com/kf/U67811e0eaaff4851bd6d74914d3c119a8.jpg)
 ![](https://ae01.alicdn.com/kf/U31fa85b371084331be050a938a8fadb1d.jpg)
