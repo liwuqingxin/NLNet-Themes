@@ -62,8 +62,8 @@ window.$silence = {
         enable: true,
         text: '',
         paypal: '',
-        wechat: 'https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/.wechat.jpg',
-        alipay: 'https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/.alipay.jpg'
+        wechat: 'https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/wechat.jpg',
+        alipay: 'https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/alipay.jpg'
     }
 };
 

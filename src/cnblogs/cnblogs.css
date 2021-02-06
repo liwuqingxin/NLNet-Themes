@@ -38,7 +38,7 @@
 	--scroll-bar-bg-color: #252525;
 	--scroll-bar-thumb-color: #333333;
 	--scroll-bar-thumb-hover-color: #777777;
-	--blockquote-color: #252525;
+	--blockquote-color: #303030;
 	--blockquote-hover-color: #404040;
 	--comment-body-bg-color: #3a3a3a;
 	--block-bg-color: #555555;
@@ -1871,7 +1871,7 @@ a:hover {
 	padding: 12px 24px 12px 20px;
 	margin-top: 15px;
 	font-size: 15px;
-	background-color: var(--panel-bg-color);
+	background-color: var(--blockquote-color);
 	position: relative;
 	border-radius: 4px;
 	border-left: 4px solid var(--theme-color)
