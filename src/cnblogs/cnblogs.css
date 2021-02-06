@@ -1,4 +1,5 @@
-@import url(https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/font-awesome.min.css);
+@import url(https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css);
+/* @import url(https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/font-awesome.min.css); */
 
 
 :root[mode=light] {
@@ -604,9 +605,9 @@ a:hover {
 }
 
 #sidebar_search #widget_my_zzk .input_my_zzk {
-	color: #314659;
-	border: 1px solid var(--border-color);
-	background-color: transparent;
+	color: var(--text-color);
+	border: 1px solid transparent;
+	background-color: var(--blockquote-color);
 	width: 135px;
 	height: 32px;
 	padding: 0 7px;
@@ -615,12 +616,13 @@ a:hover {
 	transition: 0.2s;
 }
 #sidebar_search #widget_my_zzk .input_my_zzk:hover {
-	border-color: var(--theme-color-light);
+	border: 1px solid var(--theme-color-light);
+	background-color: var(--comment-body-bg-color);
 	transition: 0.2s;
 }
 #sidebar_search #widget_my_zzk .input_my_zzk:focus {
 	outline: none;
-	border-color: var(--theme-color);
+	border: 1px solid var(--theme-color);
 	transition: 0.2s;
 }
 
