@@ -360,6 +360,7 @@ a:hover {
 .octicon-mark-github:hover {
 	transition: 0.3s;
 	fill: var(--theme-color);
+	transform: rotate3d(0, 1, 0, 180deg);
 }
 
 #blogTitle h2 {
@@ -2496,6 +2497,11 @@ body > div.ui-popup.ui-popup-modal.ui-popup-show.ui-popup-focus button:hover {
     background-size:100% 100%;
 	-moz-background-size:100% 100%;
 	vertical-align: middle;
+	transition: 0.4s;
+}
+#cnblogs_post_body .icon:hover {
+	transition: 0.4s;
+	transform: rotate3d(0, 1, 0, 180deg);
 }
 #cnblogs_post_body .icon[size="8"] {
 	width: 8px;
