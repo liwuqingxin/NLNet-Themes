@@ -1,6 +1,6 @@
 window.$silence = {
-    avatar: 'https://nlnet-iss.oss-cn-hangzhou.aliyuncs.com/img/20210205212146.avator.png',
-    favicon: 'https://nlnet-iss.oss-cn-hangzhou.aliyuncs.com/img/20210205212146.avator.png',
+    avatar: 'https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/avator.png',
+    favicon: 'https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/avator.png',
     // github: 'https://github.com/liwuqingxin',
     defaultMode: 'auto',
     defaultTheme: 'c',
@@ -62,8 +62,8 @@ window.$silence = {
         enable: true,
         text: '',
         paypal: '',
-        wechat: 'https://nlnet-iss.oss-cn-hangzhou.aliyuncs.com/img/20210205214540.wechart.jpg',
-        alipay: 'https://nlnet-iss.oss-cn-hangzhou.aliyuncs.com/img/20210205214609.alipay.jpg'
+        wechat: 'https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/.wechat.jpg',
+        alipay: 'https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/.alipay.jpg'
     }
 };
 

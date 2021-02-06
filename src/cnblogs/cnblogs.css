@@ -1,4 +1,4 @@
-@import url(https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css);
+@import url(https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/font-awesome.min.css);
 
 
 :root[mode=light] {
@@ -941,6 +941,7 @@ a:hover {
 	transition: .6s;
 }
 .esa-profile-avatar:hover {
+	border-radius: 300px;
 	transition: .6s;
 	transform: scale(0.6,0.6) rotate(360deg);
 }

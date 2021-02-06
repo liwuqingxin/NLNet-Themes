@@ -3,4 +3,4 @@
 
 
 </script>
-<script src="https://nlnet-iss.oss-cn-hangzhou.aliyuncs.com/img/silence.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/silence.min.js"></script>
