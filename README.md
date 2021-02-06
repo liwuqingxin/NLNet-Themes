@@ -7,7 +7,7 @@
   </a>
 </div>
 
-# Themes
+# NLNet-Themes
 
 Themes for cnblogs and typora.
 
