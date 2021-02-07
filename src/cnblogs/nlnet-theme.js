@@ -1,72 +1,3 @@
-window.$silence = {
-    avatar: 'https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/avator.png',
-    favicon: 'https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/avator.png',
-    // github: 'https://github.com/liwuqingxin',
-    defaultMode: 'auto',
-    defaultTheme: 'c',
-
-    navbars: [{
-        title: '标签',
-        url: 'https://www.cnblogs.com/liwuqingxin/tag/'
-    }, {
-        title: '常用链接',
-        chilren: [{
-            title: '遇见图床',
-            target: '_blank',
-            url: 'https://www.hualigs.cn',
-        }, {
-            title: '软件分享',
-            target: '_blank',
-            url: 'https://pan.baidu.com/disk/home?#/all?vmode=list&path=%2F!%20%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB',
-        }, {
-            title: 'svg转base64',
-            target: '_blank',
-            url: 'https://www.css-js.com/tools/base64.html',
-        }, {
-            title: 'css选择器',
-            target: '_blank',
-            url: 'http://www.mamicode.com/info-detail-2629190.html',
-        }, {
-            title: 'shields',
-            target: '_blank',
-            url: 'https://shields.io/',
-        }, {
-            title: 'badgen',
-            target: '_blank',
-            url: 'https://badgen.net/',
-        }, {
-            title: '图片尺寸修改',
-            target: '_blank',
-            url: 'https://www.gaitubao.com/',
-        }]
-    }],
-
-    showNavAdmin: true,
-    hljsln: true,
-
-    catalog: {
-        enable: true,
-        index: true,
-        active: false,
-        levels: ['h1', 'h2', 'h3', 'h4']
-    },
-
-    signature: {
-        enable: true,
-        author: null,
-        license: ['署名-非商业性使用-相同方式共享 4.0 国际', 'https://creativecommons.org/licenses/by-nc-sa/4.0/'],
-        remark: '',
-    },
-
-    sponsor: {
-        enable: true,
-        text: '',
-        paypal: '',
-        wechat: 'https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/wechat.jpg',
-        alipay: 'https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/alipay.jpg'
-    }
-};
-
 // 代码折叠
 $(document).ready(function () {
     return;
@@ -173,7 +104,6 @@ function getElementsByClassName(parent, tag, className) {
     };
     return arr;
 }
-
 function __js_debug_msg(msg) {
     var panel = document.createElement('div');
     panel.id = "js_debug_msg";
@@ -184,7 +114,7 @@ function __js_debug_msg(msg) {
 // 隐藏摘要结束
 
 
-// Github
+// github & theme power
 $(document).ready(function () {
     var navList = document.getElementById("navList");
     var a = document.createElement('a');
@@ -200,8 +130,9 @@ $(document).ready(function () {
 
     var footer = document.getElementById("footer");
     var span = document.createElement('span');
-    span.innerHTML = '&amp; custom theme of <a href="https://github.com/liwuqingxin/Themes" target="_blank">NLNet\' cnblogs theme </a>'
+    span.innerHTML = '&amp; custom theme of <a href="https://github.com/liwuqingxin/NLNet-Themes" target="_blank">NLNet\' cnblogs theme </a>'
     $(span).attr('class', 'esa-copyright');
     $(span).attr('id', 'nlnet_copyright');
     footer.appendChild(span);
 });
+// github & theme power结束

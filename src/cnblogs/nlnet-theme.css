@@ -1,7 +1,3 @@
-@import url(https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css);
-/* @import url(https://cdn.jsdelivr.net/gh/liwuqingxin/nlnet-blogs@main/src/public files/font-awesome.min.css); */
-
-
 :root[mode=light] {
 	--blog-body-bg-color: #f4f4f4;
 	--blog-bg-color: #fff;
