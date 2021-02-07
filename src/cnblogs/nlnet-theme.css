@@ -1020,7 +1020,7 @@ a:hover {
 #topics .postBody h1 {
 	font-size: 21px;
 	margin: 25px 0px 10px 0px;
-	border-left: 8px solid var(--theme-color);
+	/* border-left: 8px solid var(--theme-color); */
 	border-bottom: 1px solid var(--theme-color);
 	padding: 1px 10px 3px 10px;
 	font-family: 'Segoe UI', '微软雅黑', Tahoma, Geneva, Verdana, sans-serif, 微软雅黑;
