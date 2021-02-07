@@ -10,6 +10,8 @@
 
 Themes for cnblogs and typora.
 
+> ==注意== 目前主题仍处于开发阶段，主题可能会持续更新，如果不希望有变动的小伙伴，可以把自行托管 `src/cnblogs/nlne-theme.css` 和 `src/cnblogs/nlne-theme.js` 文件。这两个文件的引用在 `src/cnblogs/silence/cnblogs-css-content.css` 和 `src/cnblogs/silence/cnblogs-js-content.html` 里面。
+
 1. Typora的主题是基于Typora自带的Github主题修改而来。使用方法：
 
    > 1. 复制src/typora/nlnet.css和src/typora/nlnet文件夹到typora的themes文件夹。
