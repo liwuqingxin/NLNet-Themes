@@ -117,6 +117,7 @@
 		background: var(--blog-bg-color)
 	}
 
+	/* 博客园主标题 */
 	#header #blogTitle {
 		margin-left: 15px
 	}
@@ -333,6 +334,7 @@ a:hover {
 	z-index: 999
 }
 
+/* 博客园主标题 */
 #blogTitle h1 {
 	font-size: 25px;
 	font-weight: 600;
@@ -2567,10 +2569,41 @@ h1 object.header_icon {
 h2 object.header_icon{
 	width: 24px;
 	height: 24px;
-	margin: 0 0 10px 10px;
+	margin: 0 0 10px 0px;
 }
 /* h1、h2图标======================================= */
 
 #blog_post_info > div.esa-sponsor > ul > li.paypal {
 	display: none;
 }
+
+/* 徽章======================================= */
+#cnblogs_post_body tag {
+	border-radius: 8px 0 0 8px;
+	background: var(--code-emphasize-color);
+	color: white;
+	font-weight: 500;
+	padding: 5px 16px;
+	margin: 0 0 0 3px;
+	font-family: Lekton, sans-serif, Arial, Helvetica, sans-serif;
+	/* box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, .2); */
+}
+#cnblogs_post_body cnt {
+	border-radius: 0 8px 8px 0;
+	background: var(--theme-color);
+	color: white;
+	font-weight: 500;
+	padding: 5px 16px;
+	margin: 0 3px 0 0;
+	font-family: Lekton, sans-serif, Arial, Helvetica, sans-serif;
+	/* box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, .2); */
+}
+#topics .postBody cnt a {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#topics .postBody cnt a:hover {
+	color: var(--code-emphasize-color);
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* 徽章结束======================================= */
