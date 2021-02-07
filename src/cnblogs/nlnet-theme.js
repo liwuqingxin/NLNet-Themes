@@ -135,7 +135,7 @@ $(document).ready(function () {
     footer.appendChild(span);
 
     // title1 前面插入图标
-    var title1s = $("#topics .postBody h1, .day .postTitle");
+    var title1s = $("#topics .postBody h1, .day .postTitle, #myposts div.postTitl2, #mainContent div.entrylistPosttitle");
     for (var i = 0; i < title1s.length; i++) {
         // var h = title1s[i];
         // console.log("第" + i + "个h1，child个数为：" + h.children.length, + "innerHTML为：" + h.innerHTML);

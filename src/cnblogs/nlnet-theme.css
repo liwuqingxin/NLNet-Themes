@@ -779,7 +779,8 @@ a:hover {
 #myposts .postDesc2 {
 	text-align: right;
 	margin-bottom: 10px;
-	font-size: 14px
+	font-size: 14px;
+	color: rgb(146, 145, 145)!important;
 }
 
 #myposts .postDesc2>a {
@@ -2535,12 +2536,16 @@ body > div.ui-popup.ui-popup-modal.ui-popup-show.ui-popup-focus button:hover {
 
 /* h1、h2图标 */
 .day .postTitle object.header_icon,
+#mainContent div.entrylistPosttitle object.header_icon,
+#myposts div.postTitl2 object.header_icon,
 h1 object.header_icon,
 h2 object.header_icon {
 	vertical-align: middle;
 	transition: 0.4s;
 }
 .day .postTitle object.header_icon:hover,
+#mainContent div.entrylistPosttitle object.header_icon,
+#myposts div.postTitl2 object.header_icon:hover,
 h1 object.header_icon:hover,
 h2 object.header_icon:hover {
 	transition: 0.4s;
@@ -2548,10 +2553,16 @@ h2 object.header_icon:hover {
 }
 
 .day .postTitle object.header_icon,
+#mainContent div.entrylistPosttitle object.header_icon,
 h1 object.header_icon {
 	width: 32px;
 	height: 32px;
 	margin: 0 0 10px -18px;
+}
+#myposts div.postTitl2 object.header_icon {
+	width: 32px;
+	height: 32px;
+	margin: 0 0 10px 0;
 }
 h2 object.header_icon{
 	width: 24px;
