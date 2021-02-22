@@ -1,12 +1,3 @@
 /* @import url(https://cdn.jsdelivr.net/gh/liwuqingxin/NLNet-Themes@main/src/cnblogs/silence/font-awesome.min.css); */
 @import url(https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css);
-@import url(https://nlnet-iss.oss-cn-hangzhou.aliyuncs.com/img/nlnet-theme.css);
-
-/* 屏蔽广告======================================= */
-#comment_form #cnblogs_c1,
-#under_post_card1,
-#cnblogs_c2,
-#under_post_card2 {
-	display: none;
-}
-/* 屏蔽广告结束======================================= */
+@import url(https://nlnet-iss.oss-cn-hangzhou.aliyuncs.com/themes/nlnet-theme.css);
