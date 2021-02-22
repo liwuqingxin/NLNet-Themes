@@ -2609,3 +2609,13 @@ h2 object.header_icon{
 	font-family: Arial, Helvetica, sans-serif;
 }
 /* 徽章结束======================================= */
+
+
+/* 屏蔽广告======================================= */
+#cnblogs_c1,
+under_post_card1,
+cnblogs_c2,
+under_post_card2 {
+	display: none;
+}
+/* 屏蔽广告结束======================================= */
