@@ -1,2 +1,2 @@
-xcopy ".\nlnet.css"  "C:\Users\Liwuqingxin\AppData\Roaming\Typora\themes\" /s /y /i /e
+xcopy ".\nlnet.css"  "%AppData%\Typora\themes\" /s /y /i /e
 pause
