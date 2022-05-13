@@ -1,12 +1,27 @@
-:root {
-    --side-bar-bg-color: #fafafa;
+/* 绿色 */
+/* :root {
+    --side-bar-bg-color: #f2f2f2;
     --control-text-color: #777;
-    --theme-color: #42b983;
-    --theme-color-light: #c5eedb;
-    --theme-color-deep: #268158;
+    --theme-color: #42b962;
+    --theme-color-light: #f2fcf3;
+    --theme-color-deep: #268141;
     --panel-color: #f0f0f0;
     --code-block-color: #f2f2f2;
     --border-color: #e7eaed;
+    --block-color:#f2fcf3;
+} */
+
+/* 蓝色 */
+:root {
+    --side-bar-bg-color: #f2f2f2;
+    --control-text-color: #777;
+    --theme-color: #4287b9;
+    --theme-color-light: #f2f5fc;
+    --theme-color-deep: #265881;
+    --panel-color: #f0f0f0;
+    --code-block-color: #f2f2f2;
+    --border-color: #e7eaed;
+    --block-color:#f2f5fc;
 }
 
 @include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
@@ -66,13 +81,13 @@ body {
 
 @media only screen and (min-width: 1400px) {
     #write {
-        max-width: 1024px;
+        max-width: 800px;
     }
 }
 
 @media only screen and (min-width: 1800px) {
     #write {
-        max-width: 1200px;
+        max-width: 1000px;
     }
 }
 
@@ -94,9 +109,10 @@ h6 {
     position: relative;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    font-weight: normal;
+    font-weight: bold;
     line-height: 1.4;
     cursor: text;
+    font-family:'Segoe UI', '微软雅黑', Tahoma, Geneva, Verdana, sans-serif, 微软雅黑;
 }
 
 h1:hover a.anchor,
@@ -139,13 +155,13 @@ h6 code {
 }
 
 h1 {
-    font-size: 2.0em;
+    font-size: 1.75em;
     line-height: 1.2;
     border-bottom: 1px solid #eee;
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 1.25em;
     line-height: 1.225;
     border-bottom: 1px solid #eee;
 }
@@ -168,20 +184,20 @@ h2 {
 }*/
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.43;
 }
 
 h4 {
-    font-size: 1.25em;
+    font-size: 0.8em;
 }
 
 h5 {
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 h6 {
-    font-size: 1em;
+    font-size: 0.8em;
     color: #777;
 }
 
@@ -213,6 +229,12 @@ li p.first {
     display: inline-block;
 }
 
+li {
+    /* font-size: 14px; */
+    line-height: 1.2em;
+    /* font-family:'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋; */
+}
+
 ul,
 ol {
     padding-left: 30px;
@@ -231,13 +253,14 @@ ol:last-child {
 /* 引用块 */
 blockquote {
     border-left: 4px solid var(--theme-color);
-    border-radius: 4px;
-    background-color: var(--panel-color);
-    padding: 0 15px;
+    border-radius: 0px;
+    background-color: var(--block-color);
     /* color: #777777; */
 	margin: 15px 0;
 	color: inherit;
-	padding: 1px 15px;
+	padding: 15px 15px;
+    font-size: 13px;
+    line-height: 1.2em;
 }
 
 blockquote blockquote {
@@ -309,13 +332,14 @@ tt {
 
 /* 单行代码 */
 code {
-    border: 1px solid var(--border-color);
+    border: 0px solid var(--border-color);
     background-color: var(--side-bar-bg-color);
     border-radius: 3px;
-    font-weight: lighter;
+    font-weight: bold;
     margin: 5px;
     padding: 2px 6px;
     font-family:'Segoe UI', '仿宋', Tahoma, Geneva, Verdana, sans-serif, 仿宋;
+    color: var(--theme-color-deep);
     /* box-shadow: 0 1px 1px 0 rgba(0,28,36,.3); */
 }
 
@@ -579,6 +603,7 @@ img[alt~=info] {
 /* 链接、下划线、高亮======================================= */
 u {
     text-decoration: none;
+    margin: 8px 0px;
     color:var(--control-text-color);
 }
 [md-inline=underline] {
@@ -589,6 +614,7 @@ a {
     text-decoration: none;
     color:var(--control-text-color);
     padding: 2px 0px;
+    margin: 0px 4px;
     border-radius: 3px 3px 0px 0px;
 }
 a:link {
@@ -599,20 +625,20 @@ a:visited {
 }
 a:hover {
     color: var(--theme-color-deep);
-    background-color: var(--theme-color-light);
-    transition-duration: .3s;
+    /* background-color: var(--theme-color-light); */
     /* padding: 3px 0px; */
+    transition-duration: .3s;
 }
 a:active {
     color: var(--theme-color);
 }
 [md-inline=link] {
-    border-bottom: 1px solid var(--theme-color);padding-bottom: 2px;
+    border-bottom: 0px solid var(--theme-color);padding-bottom: 2px;
     text-decoration: none;
 }
 [md-inline=link]:hover {
-    border-bottom: 2px solid var(--theme-color);padding-bottom: 2px;
-    transition-duration: .1s ease;
+    border-bottom: 1px solid var(--theme-color-deep);padding-bottom: 2px;
+    transition-duration: .3s ease;
 }
 mark {
     background-color: transparent;
@@ -850,3 +876,10 @@ i[ty-id][size="64"] {
 	height: 64px;
 }
 /* 图标结束======================================= */
+
+
+
+/* 图形 */
+/* rect {
+    height: 50px;
+} */
